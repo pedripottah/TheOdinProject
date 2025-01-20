@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS exercise 4</title>
+
+        <style>
+            body {
+                font-family: 'Courier New', Courier, monospace;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+
+            .header {
+                border: 2px solid black;
+                margin-bottom: 32px;
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                gap: 52px;
+                border: 2px solid black;
+            }
+
+            .box {
+                border: 2px solid black;
+                width: 200px;
+                gap: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+
+            img {
+                margin: 0 auto;
+                width: 100px;
+                height: 100px;
+                border: 2px solid black;
+            }
+
+            .content {
+                width: 100%;
+                border: 2px solid black;
+                text-align: center;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+
+<!------------------------------------------------------------>
+
+    <body>
+        <div class="header"><h1>Information!</h1></div>
+
+        <div class="container">
+            <div class="box">
+                <img src="https://raw.githubusercontent.com/TheOdinProject/css-exercises/refs/heads/main/foundations/flex/04-flex-information/images/barberry.png" alt="Barberry">
+                <div class="content">This is a type of plant. We love this one.</div>
+            </div>
+
+            <div class="box">
+                <img src="https://raw.githubusercontent.com/TheOdinProject/css-exercises/refs/heads/main/foundations/flex/04-flex-information/images/chilli.png" alt="Chilli">
+                <div class="content">This is another type of plant. Isn't it nice?</div>
+            </div>
+
+            <div class="box">
+                <img src="https://raw.githubusercontent.com/TheOdinProject/css-exercises/refs/heads/main/foundations/flex/04-flex-information/images/pepper.png" alt="pepper">
+                <div class="content">We have so many plants. Yay plants.</div>
+            </div>
+
+            <div class="box">
+                <img src="https://raw.githubusercontent.com/TheOdinProject/css-exercises/refs/heads/main/foundations/flex/04-flex-information/images/saffron.png" alt="saffron">
+                <div class="content">I'm running out of things to say about plants.</div>
+            </div>
+        </div>
+    </body>
+</html>

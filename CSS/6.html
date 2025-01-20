@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS exercise 6</title>
+        
+        <style>
+            a {
+                text-decoration: none;
+                font-family: sans-serif;
+                color: rgb(70, 70, 70);
+                border: 2px solid black;
+            }
+
+            body {
+                margin: 0;
+                min-height: 100vh;
+                border: 2px solid white;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .header {
+                display: flex;
+                width: 100%;
+                border: 2px solid black;
+                gap: 10px;
+                justify-content: space-between;
+                position: fixed;
+            }
+
+            .one, .two {
+                display: flex;
+                border: 1px solid black;
+                color: #eeeeee;
+                line-height: 50px;
+                text-align: center;
+                gap: 20px;
+                font-size: 18px;
+            }
+
+            .one {
+                margin-left: 10px;
+            }
+
+            .two {
+                margin-right: 10px;
+            }
+
+            .container {
+                width: 500px;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 16px;
+                margin: auto;
+                border: 2px solid black;
+            }
+
+            .input {
+                width: 100%;
+                height: 35px;
+                opacity: 40%;
+                border-radius: 100px;
+                border: 2px solid black;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid black;
+                width: 52%;
+                height: 35px;
+                gap: 5px;
+            }
+
+            .button-one, .button-two {
+                background-color: #eeeeee;
+                border: 1px solid black;
+                border-radius: 7px;
+            }
+
+            .do {
+                border: 1px solid purple;
+                margin: 8px;
+            }
+
+            img {
+                width: 90%;
+                border: 2px solid black;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .footer {
+                display: flex;
+                width: 100%;
+                border: 2px solid black;
+                gap: 10px;
+                position: fixed;
+                bottom: 0;
+                background-color: white;
+                justify-content: space-between;
+            }
+
+            .right, .left {
+                display: flex;
+                border: 1px solid black;
+                color: #eeeeee;
+                line-height: 50px;
+                text-align: center;
+                gap: 20px;
+                font-size: 18px;
+            }
+
+            .right {
+                margin-right: 10px;
+            }
+
+            .left { 
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="one">
+                <a href="#">About</a>
+                <a href="#">Store</a>
+            </div>
+
+            <div class="two">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+
+        <div class="parent"></div>
+            <div class="container">
+                <img src="https://raw.githubusercontent.com/TheOdinProject/css-exercises/refs/heads/main/foundations/flex/06-flex-layout/logo.png">
+
+                <div class="input"></div>
+
+                <div class="buttons">
+                    <div class="button-one"><div class="do">Do the thing!</div></div>
+                    <div class="button-one"><div class="do">Do the other thing!</div></div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="left">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+            </div>
+
+            <div class="right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </body>
+</html>

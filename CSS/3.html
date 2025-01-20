@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS exercise 3</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+            
+            body {
+                font-family: Besley, serif;
+            }
+
+            .grandfather {
+                background-color: white;
+                border-bottom: 1px solid #ddd;
+                box-shadow: 0 0 8px solid black;
+                padding: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .mom {
+                display: flex;
+                border: 3px solid black;
+                align-items: center;
+                gap: 16px;
+            }
+
+            .circle {
+                background-color: rebeccapurple;
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+                box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+                border: 3px solid black;
+            }
+
+            .logo {
+                font-size: 30px;
+                color: rebeccapurple;
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            .noti {
+                font-family: sans-serif;
+                line-height: 30px;
+                height: 30px;
+                width: 200px;
+                text-align: center;
+                background-color: rebeccapurple;
+                border: 2px solid black;
+                color: white;
+                border-radius: 10px;
+            }
+
+            .dad {
+                display: flex;
+                border: 2px solid black;
+                width: 500px;
+                gap: 16px;
+            }
+
+            .dad div {
+                border: 2px solid black;
+                text-align: center;
+                height: 60px;
+                line-height: 60px;
+            }
+
+            .dad a {
+                text-decoration: none;
+                color: rebeccapurple;
+            }
+        </style>
+    </head>
+
+<!----------------------------->
+
+    <body>
+        <div class="grandfather">
+            <div class="dad">
+                <div class="logo">LOGO</div>
+                <div class="one"><a href="#">link-one</a></div>
+                <div class="two"><a href="#">link-two</a></div>
+                <div class="three"><a href="#">link-three</a></div>
+            </div>
+
+
+            <div class="mom">
+                <div class="noti">1 new notification</div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </body>
+</html>
